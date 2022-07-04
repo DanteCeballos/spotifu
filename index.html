@@ -35,9 +35,26 @@
 </head>
 
 <body class="body">
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui necessitatibus porro eum atque ratione mollitia corrupti, adipisci, inventore quibusdam ipsam aspernatur, dolorum quisquam voluptas quo illo aperiam. Earum, temporibus quae?</p>
-
-
+  <div class="nowPlaying">
+    <div class="nowPlaying-cover">
+      <img src="./images/grand-scape.png" width="56" height="56" alt="Portada de Grand Escape (feat. Tokio Miura) de RADWIMPS, Toko Miura" title="Portada de Grand Escape (feat. Tokio Miura) de RADWIMPS, Toko Miura">
+    </div>
+ <div class="nowPlaying-details">
+  <div class="nowPlaying-descrption">
+    <a href="#song" class="nowPlaying-title">
+  Grand Escape (feat. Tokio Miura)
+  </a>
+  <a href="#RADWIMPS" class="nowPlaying-artist">
+  RADWIMPS, Toko Miura
+  </a>
+  </div>
+  <div class="nowPlaying-actions">
+    <button class="player-control" role="switch" aria-label="Guardar en tu biblioteca" title="Guardar en tu biblioteca">
+      <i class="icon-heart" aria-hidden="true"></i>
+    </button>
+  </div>
+ </div>
+</div>
   <div class="playerControls">
     <div class="playerControls-buttons" aria-label="Controles de reproducción">
       <button class="buttonIcon" aria-label="Anterior" title="Anterior">
@@ -65,7 +82,7 @@
 
   <div class="playerVolume">
     <button class="player-control" aria-label="Silenciar" aria-describedby="volume-icon">
-      <i class="icon-volumeUp" role="presentation" aria-label="Volumen alto"></i>
+      <i class="icon-volumeUp" id="volume-icon" role="presentation" aria-label="Volumen alto"></i>
     </button>
     <div class="playerVolume-slider">
       <div class="slider">
