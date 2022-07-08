@@ -6,7 +6,6 @@
   border: none;
   cursor: pointer;
   color:var(--gray10);
-
 }
 
 .buttonIcon.is-white {
@@ -16,6 +15,11 @@
 
 .buttonIcon.is-primary {
   background: var(--primary);
+  color: var(--white);
+}
+
+.buttonIcon.is-transparent {
+  border: 1px solid var(--white);
   color: var(--white);
 }
 
