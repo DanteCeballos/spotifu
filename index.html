@@ -35,748 +35,763 @@
 </head>
 
 <body class="body">
-  <div class="page">
-    <div class="sticky">
-      <div class="page-block">
-        <header class="header" aria-label="Barra superior y menú del usuario">
-          <div class="navigation">
-            <button class="navigation-prev" aria-label="Volver" title="Volver">
-              <i class="icon-arrowLeft" aria-hidden="true"></i>
-            </button>
-            <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
-              <i class="icon-arrowRight" aria-hidden="true"></i>
-            </button>
+  <div class="layout">
+    <div class="layout-block">
+
+      <div class="layout-sidebar">
+        <div class="sidebar">
+
+          <header class="logo">
+            <a href="/" aria-current="page">
+              <img src="./images/spotifu-logo.png" class="logo-image" width="112" height="32" alt="Logo de Spotifu">
+            </a>
+          </header>
+
+          <nav class="menu" aria-label="Principal">
+            <ul class="menu-list">
+              <li class="menuItem is-active">
+                <a href="/" class="link" aria-current="page">
+                  <i class="icon-home" aria-hidden="true"></i>
+                  <span>Inicio</span>
+                </a>
+              </li>
+              <li class="menuItem">
+                <a href="/" class="link">
+                  <i class="icon-search" aria-hidden="true"></i>
+                  <span>Buscar</span>
+                </a>
+              </li>
+              <li class="menuItem">
+                <a href="/" class="link">
+                  <i class="icon-creditCard" aria-hidden="true"></i>
+                  <span>Premium</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="list" aria-labelledby="library-navigation">
+            <h2 class="list-title" id="library-navigation">Tu biblioteca</h2>
+            <ul class="list-content">
+              <li class="list-item">
+                <a href="#" class="link">Creada para ti</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="link">Escuchado recientemente</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="link">Tus Me gusta</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="list" aria-labelledby="playlist-navigation">
+            <h2 class="list-title" id="playlist-navigation">Playlist</h2>
+            <ul class="list-content">
+              <li class="list-item">
+                <a href="#" class="link">Lo mejor de lo mejor</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="link">Éxitos de México</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="link">Para cantar en la ducha</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="link">Electrónica Máxima</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="link">Pool Party</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="link">Cancún de Noche</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="link">Mega éxitos 2022</a>
+              </li>
+              <li class="list-item">
+                <span class="ellipsis">
+                  <a href="#" class="link">Más populares de la semana para ti que eres un pro</a>
+                </span>
+              </li>
+              <li class="list-item">
+                <a href="#" class="link">Regueton viejo & regueton antigüo</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="link">Canta en el auto</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="layout-main">
+        <div class="page">
+        <div class="sticky">
+          <div class="page-block">
+            <header class="header" aria-label="Barra superior y menú del usuario">
+              <div class="navigation">
+                <button class="navigation-prev" aria-label="Volver" title="Volver">
+                  <i class="icon-arrowLeft" aria-hidden="true"></i>
+                </button>
+                <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+                  <i class="icon-arrowRight" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <form class="search" role="search" aria-label="Buscar por Artistas, Canciones o Podcast">
+              <i class="icon-search" aria aria-hidden="true"></i>
+              <input  type="search" placeholder="Buscar por Artistas, Canciones o Podcast">
+            </form>
+          </header>
+          </div>
         </div>
 
-        <form class="search" role="search" aria-label="Buscar por Artistas, Canciones o Podcast">
-          <i class="icon-search" aria aria-hidden="true"></i>
-          <input  type="search" placeholder="Buscar por Artistas, Canciones o Podcast">
-        </form>
-      </header>
+        <main class="page-block">
+          <section class="playlistList" aria-labelledby="region1">
+            <div class="playlistList-top">
+              <h2 class="playlistList-title" id="region1">
+                  Buenas noches
+              </h2>
+
+            <div class="navigation">
+              <button class="navigation-prev" aria-label="Volver" title="Volver">
+                <i class="icon-arrowLeft" aria-hidden="true"></i>
+              </button>
+              <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+                <i class="icon-arrowRight" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+            <div class="playlistList-container">
+                <div class="playlistB">
+                <div class="playlistB-cover">
+                  <img src="./images/exitos-mexico.png" width="76" height="76" alt="Cover de la playlist Éxitos de México">
+                </div>
+                <div class="playlistB-details">
+                  <h3 class="playlistB-title">Éxitos México</h3>
+                  <div class="playlistB-control">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir la lista reproduccion Éxitos de México"
+                      title="Reproducir la lista reproduccion Éxitos de México">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/regueton-viejo.png" width="76" height="76" alt="Cover de la playlist Regueton Viejo">
+                  </div>
+                  <div class="playlistB-details">
+                    <h3 class="playlistB-title">Regueton Viejo & Regueton Antigüo</h3>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary" aria-label="Reproducir la lista reproduccion Regueton Viejo"
+                        title="Reproducir la lista reproduccion Regueton Viejo">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/pool-party.png" width="76" height="76" alt="Cover de la playlist Pool Party">
+                  </div>
+                  <div class="playlistB-details">
+                    <h3 class="playlistB-title">Pool Party</h3>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary" aria-label="Reproducir la lista reproduccion Pool Party"
+                        title="Reproducir la lista reproduccion Pool Party">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/mega-exitos.png" width="76" height="76" alt="Cover de la playlist Mega Exitos 2022">
+                  </div>
+                  <div class="playlistB-details">
+                    <h3 class="playlistB-title">Mega Éxitos 2022</h3>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary" aria-label="Reproducir la lista reproduccion Mega Éxitos 2022"
+                        title="Reproducir la lista reproduccion Mega Éxitos 2022">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/cancun.png" width="76" height="76" alt="Cover de la playlist Cancún">
+                  </div>
+                  <div class="playlistB-details">
+                    <h3 class="playlistB-title">Cancún de Noche</h3>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary" aria-label="Reproducir la lista reproduccion Cancún de noche"
+                        title="Reproducir la lista reproduccion Cancún de noche">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/hits.png" width="76" height="76" alt="Cover de la playlist Hits Urbanos">
+                  </div>
+                  <div class="playlistB-details">
+                    <h3 class="playlistB-title">Hits Urbano</h3>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary" aria-label="Reproducir la lista reproduccion Hits Urbano"
+                        title="Reproducir la lista reproduccion Hits Urbano">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="playlistB">
+              <div class="playlistB-cover">
+                <img src="./images/electronica-maxima.png" width="76" height="76" alt="Cover de la playlist Electrónica Máxima">
+              </div>
+              <div class="playlistB-details">
+                <h3 class="playlistB-title">Electrónica Máxima</h3>
+                <div class="playlistB-control">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir la lista reproduccion Electrónica Máxima"
+                    title="Reproducir la lista reproduccion Electrónica Máxima">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+                </div>
+                <div class="playlistB">
+                <div class="playlistB-cover">
+                  <img src="./images/canta-auto.png" width="76" height="76" alt="Cover de la playlist Canta en el auto">
+                </div>
+                <div class="playlistB-details">
+                  <h3 class="playlistB-title">Canta en el Auto</h3>
+                  <div class="playlistB-control">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir la lista reproduccion Canta en el auto"
+                      title="Reproducir la lista reproduccion Canta en el auto">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+                </div>
+                <div class="playlistB">
+                <div class="playlistB-cover">
+                  <img src="./images/mansion.png" width="76" height="76" alt="Cover de la playlist Mansion Regueton">
+                </div>
+                <div class="playlistB-details">
+                  <h3 class="playlistB-title">Mansión Regueton</h3>
+                  <div class="playlistB-control">
+                    <button class="buttonIcon is-primary" aria-label="Reproducir la lista reproduccion Mansión Regueton"
+                      title="Reproducir la lista reproduccion Mansión Regueton">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="playlistList" aria-labelledby="region2">
+          <div class="playlistList-top">
+
+          <h2 class="playlistList-title" id="region2">
+            Escuchado recientemente
+          </h2>
+            <div class="navigation">
+              <button class="navigation-prev" aria-label="Volver" title="Volver">
+                <i class="icon-arrowLeft" aria-hidden="true"></i>
+              </button>
+              <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+                <i class="icon-arrowRight" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="playlistList-container">
+            <div class="playlistA">
+              <div class="playlistA-cover">
+                <img src="./images/titi-me-pregunto.png" width="150" height="150" alt="Cover de la playlist Tití me preguntó">
+                <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                  <i class="icon-play" aria-hidden="true"></i>
+                </button>
+              </div>
+              <h3 class="playlistA-title">Tití me preguntó</h3>
+              <h4 class="playlistA-description">Bad Bunny</h4>
+            </div>
+            <div class="playlistA">
+              <div class="playlistA-cover">
+                <img src="./images/Mar-tierra.png" width="150" height="150" alt="Cover de la playlist Mar y tierra">
+                <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                  <i class="icon-play" aria-hidden="true"></i>
+                </button>
+              </div>
+              <h3 class="playlistA-title">Mar y Tierra</h3>
+              <h4 class="playlistA-description">Santa Fe Klan</h4>
+            </div>
+            <div class="playlistA">
+              <div class="playlistA-cover">
+                <img src="./images/me-levante.png" width="150" height="150" alt="Cover de la playlist Me Levanté">
+                <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                  <i class="icon-play" aria-hidden="true"></i>
+                </button>
+              </div>
+              <h3 class="playlistA-title">Me Levanté</h3>
+              <h4 class="playlistA-description">Dave Bolaño</h4>
+            </div>
+            <div class="playlistA">
+              <div class="playlistA-cover">
+                <img src="./images/cnv-sound.png" width="150" height="150" alt="Cover de la playlist Cnv Sound">
+                <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                  <i class="icon-play" aria-hidden="true"></i>
+                </button>
+              </div>
+              <h3 class="playlistA-title">Cnv Sound, Vol. 14</h3>
+              <h4 class="playlistA-description">Pure Negga, Ziko</h4>
+            </div>
+            <div class="playlistA">
+              <div class="playlistA-cover">
+                <img src="./images/jordan.png" width="150" height="150" alt="Cover de la playlist Jordan">
+                <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                  <i class="icon-play" aria-hidden="true"></i>
+                </button>
+              </div>
+              <h3 class="playlistA-title">Jordan</h3>
+              <h4 class="playlistA-description">Ryan Castro</h4>
+            </div>
+            <div class="playlistA">
+              <div class="playlistA-cover">
+                <img src="./images/the-moon.png" width="150" height="150" alt="Cover de la playlist The moon">
+                <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                  <i class="icon-play" aria-hidden="true"></i>
+                </button>
+              </div>
+              <h3 class="playlistA-title">The Moon - Mix 3</h3>
+              <h4 class="playlistA-description">DJ Feedo</h4>
+            </div>
+            <div class="playlistA">
+              <div class="playlistA-cover">
+                <img src="./images/Residente-Bzrp-Music-Sessions-Vol-49.png" width="150" height="150" alt="Cover de la playlist Residente Bzrp Music Sessions Vol.49">
+                <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                  <i class="icon-play" aria-hidden="true"></i>
+                </button>
+              </div>
+              <h3 class="playlistA-title">Residente: Bzrp Residente Music Sessions, Vol. 49</h3>
+              <h4 class="playlistA-description">Bizarrap, Residente</h4>
+            </div>
+            <div class="playlistA">
+              <div class="playlistA-cover">
+                <img src="./images/El-Anciano-Y-El-Nino.png" width="150" height="150" alt="Cover de la playlist El Anciano y El Niño">
+                <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                  <i class="icon-play" aria-hidden="true"></i>
+                </button>
+              </div>
+              <h3 class="playlistA-title">El Anciano y el Niño</h3>
+              <h4 class="playlistA-description">Cheo Gallego</h4>
+            </div>
+            <div class="playlistA">
+              <div class="playlistA-cover">
+                <img src="./images/eminem-stan.png" width="150" height="150" alt="Cover de la playlist Stan">
+                <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                  <i class="icon-play" aria-hidden="true"></i>
+                </button>
+              </div>
+              <h3 class="playlistA-title">Stan</h3>
+              <h4 class="playlistA-description">Eminem, Dido</h4>
+            </div>
+            <div class="playlistA">
+              <div class="playlistA-cover">
+                <img src="./images/me-vieron-cruzar.png" width="150" height="150" alt="Cover de la playlist Me vieron cruzar">
+                <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                  <i class="icon-play" aria-hidden="true"></i>
+                </button>
+              </div>
+              <h3 class="playlistA-title">Me Vieron Cruzar</h3>
+              <h4 class="playlistA-description">Calle 13</h4>
+            </div>
+            <div class="playlistA">
+              <div class="playlistA-cover">
+                <img src="./images/mamichula.png" width="150" height="150" alt="Cover de la playlist Mamichula">
+                <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                  <i class="icon-play" aria-hidden="true"></i>
+                </button>
+              </div>
+              <h3 class="playlistA-title">Mamichula - En Vivo</h3>
+              <h4 class="playlistA-description">Trueno, Nicki Nicole</h4>
+            </div>
+            <div class="playlistA">
+              <div class="playlistA-cover">
+                <img src="./images/te-ire-a-buscar.png" width="150" height="150" alt="Cover de la playlist Te ire a buscar">
+                <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                  <i class="icon-play" aria-hidden="true"></i>
+                </button>
+              </div>
+              <h3 class="playlistA-title">Te Ire A Buscar</h3>
+              <h4 class="playlistA-description">Santa Fe Klan, Nanpa Básico</h4>
+            </div>
+          </div>
+          </section>
+
+          <section class="playlistList" aria-labelledby="region3">
+            <div class="playlistList-top">
+
+              <h2 class="playlistList-title" id="region3">
+                Éxitos de México
+              </h2>
+              <div class="navigation">
+                <button class="navigation-prev" aria-label="Volver" title="Volver">
+                  <i class="icon-arrowLeft" aria-hidden="true"></i>
+                </button>
+                <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+                  <i class="icon-arrowRight" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="playlistList-container">
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/titi-me-pregunto.png" width="150" height="150" alt="Cover de la playlist Tití me preguntó">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">Tití me preguntó</h3>
+                <h4 class="playlistA-description">Bad Bunny</h4>
+              </div>
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/Mar-tierra.png" width="150" height="150" alt="Cover de la playlist Mar y tierra">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">Mar y Tierra</h3>
+                <h4 class="playlistA-description">Santa Fe Klan</h4>
+              </div>
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/me-levante.png" width="150" height="150" alt="Cover de la playlist Me Levanté">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">Me Levanté</h3>
+                <h4 class="playlistA-description">Dave Bolaño</h4>
+              </div>
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/cnv-sound.png" width="150" height="150" alt="Cover de la playlist Cnv Sound">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">Cnv Sound, Vol. 14</h3>
+                <h4 class="playlistA-description">Pure Negga, Ziko</h4>
+              </div>
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/jordan.png" width="150" height="150" alt="Cover de la playlist Jordan">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">Jordan</h3>
+                <h4 class="playlistA-description">Ryan Castro</h4>
+              </div>
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/the-moon.png" width="150" height="150" alt="Cover de la playlist The moon">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">The Moon - Mix 3</h3>
+                <h4 class="playlistA-description">DJ Feedo</h4>
+              </div>
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/Residente-Bzrp-Music-Sessions-Vol-49.png" width="150" height="150"
+                    alt="Cover de la playlist Residente Bzrp Music Sessions Vol.49">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">Residente: Bzrp Residente Music Sessions, Vol. 49</h3>
+                <h4 class="playlistA-description">Bizarrap, Residente</h4>
+              </div>
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/El-Anciano-Y-El-Nino.png" width="150" height="150"
+                    alt="Cover de la playlist El Anciano y El Niño">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">El Anciano y el Niño</h3>
+                <h4 class="playlistA-description">Cheo Gallego</h4>
+              </div>
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/eminem-stan.png" width="150" height="150" alt="Cover de la playlist Stan">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">Stan</h3>
+                <h4 class="playlistA-description">Eminem, Dido</h4>
+              </div>
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/me-vieron-cruzar.png" width="150" height="150" alt="Cover de la playlist Me vieron cruzar">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">Me Vieron Cruzar</h3>
+                <h4 class="playlistA-description">Calle 13</h4>
+              </div>
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/mamichula.png" width="150" height="150" alt="Cover de la playlist Mamichula">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">Mamichula - En Vivo</h3>
+                <h4 class="playlistA-description">Trueno, Nicki Nicole</h4>
+              </div>
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/te-ire-a-buscar.png" width="150" height="150" alt="Cover de la playlist Te ire a buscar">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">Te Ire A Buscar</h3>
+                <h4 class="playlistA-description">Santa Fe Klan, Nanpa Básico</h4>
+              </div>
+            </div>
+          </section>
+
+          <section class="playlistList" aria-labelledby="region4">
+            <div class="playlistList-top">
+
+              <h2 class="playlistList-title" id="region4">
+                Lo mejor de lo mejor
+              </h2>
+              <div class="navigation">
+                <button class="navigation-prev" aria-label="Volver" title="Volver">
+                  <i class="icon-arrowLeft" aria-hidden="true"></i>
+                </button>
+                <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+                  <i class="icon-arrowRight" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="playlistList-container">
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/titi-me-pregunto.png" width="150" height="150" alt="Cover de la playlist Tití me preguntó">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">Tití me preguntó</h3>
+                <h4 class="playlistA-description">Bad Bunny</h4>
+              </div>
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/Mar-tierra.png" width="150" height="150" alt="Cover de la playlist Mar y tierra">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">Mar y Tierra</h3>
+                <h4 class="playlistA-description">Santa Fe Klan</h4>
+              </div>
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/me-levante.png" width="150" height="150" alt="Cover de la playlist Me Levanté">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">Me Levanté</h3>
+                <h4 class="playlistA-description">Dave Bolaño</h4>
+              </div>
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/cnv-sound.png" width="150" height="150" alt="Cover de la playlist Cnv Sound">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">Cnv Sound, Vol. 14</h3>
+                <h4 class="playlistA-description">Pure Negga, Ziko</h4>
+              </div>
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/jordan.png" width="150" height="150" alt="Cover de la playlist Jordan">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">Jordan</h3>
+                <h4 class="playlistA-description">Ryan Castro</h4>
+              </div>
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/the-moon.png" width="150" height="150" alt="Cover de la playlist The moon">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">The Moon - Mix 3</h3>
+                <h4 class="playlistA-description">DJ Feedo</h4>
+              </div>
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/Residente-Bzrp-Music-Sessions-Vol-49.png" width="150" height="150"
+                    alt="Cover de la playlist Residente Bzrp Music Sessions Vol.49">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">Residente: Bzrp Residente Music Sessions, Vol. 49</h3>
+                <h4 class="playlistA-description">Bizarrap, Residente</h4>
+              </div>
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/El-Anciano-Y-El-Nino.png" width="150" height="150"
+                    alt="Cover de la playlist El Anciano y El Niño">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">El Anciano y el Niño</h3>
+                <h4 class="playlistA-description">Cheo Gallego</h4>
+              </div>
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/eminem-stan.png" width="150" height="150" alt="Cover de la playlist Stan">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">Stan</h3>
+                <h4 class="playlistA-description">Eminem, Dido</h4>
+              </div>
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/me-vieron-cruzar.png" width="150" height="150" alt="Cover de la playlist Me vieron cruzar">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">Me Vieron Cruzar</h3>
+                <h4 class="playlistA-description">Calle 13</h4>
+              </div>
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/mamichula.png" width="150" height="150" alt="Cover de la playlist Mamichula">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">Mamichula - En Vivo</h3>
+                <h4 class="playlistA-description">Trueno, Nicki Nicole</h4>
+              </div>
+              <div class="playlistA">
+                <div class="playlistA-cover">
+                  <img src="./images/te-ire-a-buscar.png" width="150" height="150" alt="Cover de la playlist Te ire a buscar">
+                  <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <h3 class="playlistA-title">Te Ire A Buscar</h3>
+                <h4 class="playlistA-description">Santa Fe Klan, Nanpa Básico</h4>
+              </div>
+            </div>
+          </section>
+
+        </main>
+        </div>
       </div>
     </div>
 
-    <main class="page-block">
-      <section class="playlistList" aria-labelledby="region1">
-        <div class="playlistList-top">
-          <h2 class="playlistList-title" id="region1">
-              Buenas noches
-          </h2>
 
-        <div class="navigation">
-          <button class="navigation-prev" aria-label="Volver" title="Volver">
-            <i class="icon-arrowLeft" aria-hidden="true"></i>
-          </button>
-          <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
-            <i class="icon-arrowRight" aria-hidden="true"></i>
-          </button>
-        </div>
+  <div class="layout-block">
+      <footer class="layout-bottom">
+      <div class="player">
+  <div class="player-nowPlaying">
+    <div class="nowPlaying">
+      <div class="nowPlaying-cover">
+        <img src="./images/grand-scape.png" width="56" height="56"
+          alt="Portada de Grand Escape (feat. Tokio Miura) de RADWIMPS, Toko Miura"
+          title="Portada de Grand Escape (feat. Tokio Miura) de RADWIMPS, Toko Miura">
       </div>
-        <div class="playlistList-container">
-            <div class="playlistB">
-            <div class="playlistB-cover">
-              <img src="./images/exitos-mexico.png" width="76" height="76" alt="Cover de la playlist Éxitos de México">
-            </div>
-            <div class="playlistB-details">
-              <h3 class="playlistB-title">Éxitos México</h3>
-              <div class="playlistB-control">
-                <button class="buttonIcon is-primary" aria-label="Reproducir la lista reproduccion Éxitos de México"
-                  title="Reproducir la lista reproduccion Éxitos de México">
-                  <i class="icon-play" aria-hidden="true"></i>
-                </button>
-              </div>
-            </div>
-            </div>
-            <div class="playlistB">
-              <div class="playlistB-cover">
-                <img src="./images/regueton-viejo.png" width="76" height="76" alt="Cover de la playlist Regueton Viejo">
-              </div>
-              <div class="playlistB-details">
-                <h3 class="playlistB-title">Regueton Viejo & Regueton Antigüo</h3>
-                <div class="playlistB-control">
-                  <button class="buttonIcon is-primary" aria-label="Reproducir la lista reproduccion Regueton Viejo"
-                    title="Reproducir la lista reproduccion Regueton Viejo">
-                    <i class="icon-play" aria-hidden="true"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="playlistB">
-              <div class="playlistB-cover">
-                <img src="./images/pool-party.png" width="76" height="76" alt="Cover de la playlist Pool Party">
-              </div>
-              <div class="playlistB-details">
-                <h3 class="playlistB-title">Pool Party</h3>
-                <div class="playlistB-control">
-                  <button class="buttonIcon is-primary" aria-label="Reproducir la lista reproduccion Pool Party"
-                    title="Reproducir la lista reproduccion Pool Party">
-                    <i class="icon-play" aria-hidden="true"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="playlistB">
-              <div class="playlistB-cover">
-                <img src="./images/mega-exitos.png" width="76" height="76" alt="Cover de la playlist Mega Exitos 2022">
-              </div>
-              <div class="playlistB-details">
-                <h3 class="playlistB-title">Mega Éxitos 2022</h3>
-                <div class="playlistB-control">
-                  <button class="buttonIcon is-primary" aria-label="Reproducir la lista reproduccion Mega Éxitos 2022"
-                    title="Reproducir la lista reproduccion Mega Éxitos 2022">
-                    <i class="icon-play" aria-hidden="true"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="playlistB">
-              <div class="playlistB-cover">
-                <img src="./images/cancun.png" width="76" height="76" alt="Cover de la playlist Cancún">
-              </div>
-              <div class="playlistB-details">
-                <h3 class="playlistB-title">Cancún de Noche</h3>
-                <div class="playlistB-control">
-                  <button class="buttonIcon is-primary" aria-label="Reproducir la lista reproduccion Cancún de noche"
-                    title="Reproducir la lista reproduccion Cancún de noche">
-                    <i class="icon-play" aria-hidden="true"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="playlistB">
-              <div class="playlistB-cover">
-                <img src="./images/hits.png" width="76" height="76" alt="Cover de la playlist Hits Urbanos">
-              </div>
-              <div class="playlistB-details">
-                <h3 class="playlistB-title">Hits Urbano</h3>
-                <div class="playlistB-control">
-                  <button class="buttonIcon is-primary" aria-label="Reproducir la lista reproduccion Hits Urbano"
-                    title="Reproducir la lista reproduccion Hits Urbano">
-                    <i class="icon-play" aria-hidden="true"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="playlistB">
-          <div class="playlistB-cover">
-            <img src="./images/electronica-maxima.png" width="76" height="76" alt="Cover de la playlist Electrónica Máxima">
-          </div>
-          <div class="playlistB-details">
-            <h3 class="playlistB-title">Electrónica Máxima</h3>
-            <div class="playlistB-control">
-              <button class="buttonIcon is-primary" aria-label="Reproducir la lista reproduccion Electrónica Máxima"
-                title="Reproducir la lista reproduccion Electrónica Máxima">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-          </div>
-            </div>
-            <div class="playlistB">
-            <div class="playlistB-cover">
-              <img src="./images/canta-auto.png" width="76" height="76" alt="Cover de la playlist Canta en el auto">
-            </div>
-            <div class="playlistB-details">
-              <h3 class="playlistB-title">Canta en el Auto</h3>
-              <div class="playlistB-control">
-                <button class="buttonIcon is-primary" aria-label="Reproducir la lista reproduccion Canta en el auto"
-                  title="Reproducir la lista reproduccion Canta en el auto">
-                  <i class="icon-play" aria-hidden="true"></i>
-                </button>
-              </div>
-            </div>
-            </div>
-            <div class="playlistB">
-            <div class="playlistB-cover">
-              <img src="./images/mansion.png" width="76" height="76" alt="Cover de la playlist Mansion Regueton">
-            </div>
-            <div class="playlistB-details">
-              <h3 class="playlistB-title">Mansión Regueton</h3>
-              <div class="playlistB-control">
-                <button class="buttonIcon is-primary" aria-label="Reproducir la lista reproduccion Mansión Regueton"
-                  title="Reproducir la lista reproduccion Mansión Regueton">
-                  <i class="icon-play" aria-hidden="true"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="playlistList" aria-labelledby="region2">
-      <div class="playlistList-top">
-
-      <h2 class="playlistList-title" id="region2">
-        Escuchado recientemente
-      </h2>
-        <div class="navigation">
-          <button class="navigation-prev" aria-label="Volver" title="Volver">
-            <i class="icon-arrowLeft" aria-hidden="true"></i>
-          </button>
-          <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
-            <i class="icon-arrowRight" aria-hidden="true"></i>
-          </button>
-        </div>
-      </div>
-      <div class="playlistList-container">
-        <div class="playlistA">
-          <div class="playlistA-cover">
-            <img src="./images/titi-me-pregunto.png" width="150" height="150" alt="Cover de la playlist Tití me preguntó">
-            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-              <i class="icon-play" aria-hidden="true"></i>
-            </button>
-          </div>
-          <h3 class="playlistA-title">Tití me preguntó</h3>
-          <h4 class="playlistA-description">Bad Bunny</h4>
-        </div>
-        <div class="playlistA">
-          <div class="playlistA-cover">
-            <img src="./images/Mar-tierra.png" width="150" height="150" alt="Cover de la playlist Mar y tierra">
-            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-              <i class="icon-play" aria-hidden="true"></i>
-            </button>
-          </div>
-          <h3 class="playlistA-title">Mar y Tierra</h3>
-          <h4 class="playlistA-description">Santa Fe Klan</h4>
-        </div>
-        <div class="playlistA">
-          <div class="playlistA-cover">
-            <img src="./images/me-levante.png" width="150" height="150" alt="Cover de la playlist Me Levanté">
-            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-              <i class="icon-play" aria-hidden="true"></i>
-            </button>
-          </div>
-          <h3 class="playlistA-title">Me Levanté</h3>
-          <h4 class="playlistA-description">Dave Bolaño</h4>
-        </div>
-        <div class="playlistA">
-          <div class="playlistA-cover">
-            <img src="./images/cnv-sound.png" width="150" height="150" alt="Cover de la playlist Cnv Sound">
-            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-              <i class="icon-play" aria-hidden="true"></i>
-            </button>
-          </div>
-          <h3 class="playlistA-title">Cnv Sound, Vol. 14</h3>
-          <h4 class="playlistA-description">Pure Negga, Ziko</h4>
-        </div>
-        <div class="playlistA">
-          <div class="playlistA-cover">
-            <img src="./images/jordan.png" width="150" height="150" alt="Cover de la playlist Jordan">
-            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-              <i class="icon-play" aria-hidden="true"></i>
-            </button>
-          </div>
-          <h3 class="playlistA-title">Jordan</h3>
-          <h4 class="playlistA-description">Ryan Castro</h4>
-        </div>
-        <div class="playlistA">
-          <div class="playlistA-cover">
-            <img src="./images/the-moon.png" width="150" height="150" alt="Cover de la playlist The moon">
-            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-              <i class="icon-play" aria-hidden="true"></i>
-            </button>
-          </div>
-          <h3 class="playlistA-title">The Moon - Mix 3</h3>
-          <h4 class="playlistA-description">DJ Feedo</h4>
-        </div>
-        <div class="playlistA">
-          <div class="playlistA-cover">
-            <img src="./images/Residente-Bzrp-Music-Sessions-Vol-49.png" width="150" height="150" alt="Cover de la playlist Residente Bzrp Music Sessions Vol.49">
-            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-              <i class="icon-play" aria-hidden="true"></i>
-            </button>
-          </div>
-          <h3 class="playlistA-title">Residente: Bzrp Residente Music Sessions, Vol. 49</h3>
-          <h4 class="playlistA-description">Bizarrap, Residente</h4>
-        </div>
-        <div class="playlistA">
-          <div class="playlistA-cover">
-            <img src="./images/El-Anciano-Y-El-Nino.png" width="150" height="150" alt="Cover de la playlist El Anciano y El Niño">
-            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-              <i class="icon-play" aria-hidden="true"></i>
-            </button>
-          </div>
-          <h3 class="playlistA-title">El Anciano y el Niño</h3>
-          <h4 class="playlistA-description">Cheo Gallego</h4>
-        </div>
-        <div class="playlistA">
-          <div class="playlistA-cover">
-            <img src="./images/eminem-stan.png" width="150" height="150" alt="Cover de la playlist Stan">
-            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-              <i class="icon-play" aria-hidden="true"></i>
-            </button>
-          </div>
-          <h3 class="playlistA-title">Stan</h3>
-          <h4 class="playlistA-description">Eminem, Dido</h4>
-        </div>
-        <div class="playlistA">
-          <div class="playlistA-cover">
-            <img src="./images/me-vieron-cruzar.png" width="150" height="150" alt="Cover de la playlist Me vieron cruzar">
-            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-              <i class="icon-play" aria-hidden="true"></i>
-            </button>
-          </div>
-          <h3 class="playlistA-title">Me Vieron Cruzar</h3>
-          <h4 class="playlistA-description">Calle 13</h4>
-        </div>
-        <div class="playlistA">
-          <div class="playlistA-cover">
-            <img src="./images/mamichula.png" width="150" height="150" alt="Cover de la playlist Mamichula">
-            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-              <i class="icon-play" aria-hidden="true"></i>
-            </button>
-          </div>
-          <h3 class="playlistA-title">Mamichula - En Vivo</h3>
-          <h4 class="playlistA-description">Trueno, Nicki Nicole</h4>
-        </div>
-        <div class="playlistA">
-          <div class="playlistA-cover">
-            <img src="./images/te-ire-a-buscar.png" width="150" height="150" alt="Cover de la playlist Te ire a buscar">
-            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-              <i class="icon-play" aria-hidden="true"></i>
-            </button>
-          </div>
-          <h3 class="playlistA-title">Te Ire A Buscar</h3>
-          <h4 class="playlistA-description">Santa Fe Klan, Nanpa Básico</h4>
-        </div>
-      </div>
-      </section>
-
-      <section class="playlistList" aria-labelledby="region3">
-        <div class="playlistList-top">
-
-          <h2 class="playlistList-title" id="region3">
-            Éxitos de México
-          </h2>
-          <div class="navigation">
-            <button class="navigation-prev" aria-label="Volver" title="Volver">
-              <i class="icon-arrowLeft" aria-hidden="true"></i>
-            </button>
-            <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
-              <i class="icon-arrowRight" aria-hidden="true"></i>
-            </button>
-          </div>
-        </div>
-        <div class="playlistList-container">
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/titi-me-pregunto.png" width="150" height="150" alt="Cover de la playlist Tití me preguntó">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">Tití me preguntó</h3>
-            <h4 class="playlistA-description">Bad Bunny</h4>
-          </div>
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/Mar-tierra.png" width="150" height="150" alt="Cover de la playlist Mar y tierra">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">Mar y Tierra</h3>
-            <h4 class="playlistA-description">Santa Fe Klan</h4>
-          </div>
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/me-levante.png" width="150" height="150" alt="Cover de la playlist Me Levanté">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">Me Levanté</h3>
-            <h4 class="playlistA-description">Dave Bolaño</h4>
-          </div>
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/cnv-sound.png" width="150" height="150" alt="Cover de la playlist Cnv Sound">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">Cnv Sound, Vol. 14</h3>
-            <h4 class="playlistA-description">Pure Negga, Ziko</h4>
-          </div>
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/jordan.png" width="150" height="150" alt="Cover de la playlist Jordan">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">Jordan</h3>
-            <h4 class="playlistA-description">Ryan Castro</h4>
-          </div>
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/the-moon.png" width="150" height="150" alt="Cover de la playlist The moon">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">The Moon - Mix 3</h3>
-            <h4 class="playlistA-description">DJ Feedo</h4>
-          </div>
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/Residente-Bzrp-Music-Sessions-Vol-49.png" width="150" height="150"
-                alt="Cover de la playlist Residente Bzrp Music Sessions Vol.49">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">Residente: Bzrp Residente Music Sessions, Vol. 49</h3>
-            <h4 class="playlistA-description">Bizarrap, Residente</h4>
-          </div>
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/El-Anciano-Y-El-Nino.png" width="150" height="150"
-                alt="Cover de la playlist El Anciano y El Niño">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">El Anciano y el Niño</h3>
-            <h4 class="playlistA-description">Cheo Gallego</h4>
-          </div>
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/eminem-stan.png" width="150" height="150" alt="Cover de la playlist Stan">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">Stan</h3>
-            <h4 class="playlistA-description">Eminem, Dido</h4>
-          </div>
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/me-vieron-cruzar.png" width="150" height="150" alt="Cover de la playlist Me vieron cruzar">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">Me Vieron Cruzar</h3>
-            <h4 class="playlistA-description">Calle 13</h4>
-          </div>
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/mamichula.png" width="150" height="150" alt="Cover de la playlist Mamichula">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">Mamichula - En Vivo</h3>
-            <h4 class="playlistA-description">Trueno, Nicki Nicole</h4>
-          </div>
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/te-ire-a-buscar.png" width="150" height="150" alt="Cover de la playlist Te ire a buscar">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">Te Ire A Buscar</h3>
-            <h4 class="playlistA-description">Santa Fe Klan, Nanpa Básico</h4>
-          </div>
-        </div>
-      </section>
-
-      <section class="playlistList" aria-labelledby="region4">
-        <div class="playlistList-top">
-
-          <h2 class="playlistList-title" id="region4">
-            Lo mejor de lo mejor
-          </h2>
-          <div class="navigation">
-            <button class="navigation-prev" aria-label="Volver" title="Volver">
-              <i class="icon-arrowLeft" aria-hidden="true"></i>
-            </button>
-            <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
-              <i class="icon-arrowRight" aria-hidden="true"></i>
-            </button>
-          </div>
-        </div>
-        <div class="playlistList-container">
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/titi-me-pregunto.png" width="150" height="150" alt="Cover de la playlist Tití me preguntó">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">Tití me preguntó</h3>
-            <h4 class="playlistA-description">Bad Bunny</h4>
-          </div>
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/Mar-tierra.png" width="150" height="150" alt="Cover de la playlist Mar y tierra">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">Mar y Tierra</h3>
-            <h4 class="playlistA-description">Santa Fe Klan</h4>
-          </div>
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/me-levante.png" width="150" height="150" alt="Cover de la playlist Me Levanté">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">Me Levanté</h3>
-            <h4 class="playlistA-description">Dave Bolaño</h4>
-          </div>
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/cnv-sound.png" width="150" height="150" alt="Cover de la playlist Cnv Sound">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">Cnv Sound, Vol. 14</h3>
-            <h4 class="playlistA-description">Pure Negga, Ziko</h4>
-          </div>
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/jordan.png" width="150" height="150" alt="Cover de la playlist Jordan">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">Jordan</h3>
-            <h4 class="playlistA-description">Ryan Castro</h4>
-          </div>
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/the-moon.png" width="150" height="150" alt="Cover de la playlist The moon">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">The Moon - Mix 3</h3>
-            <h4 class="playlistA-description">DJ Feedo</h4>
-          </div>
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/Residente-Bzrp-Music-Sessions-Vol-49.png" width="150" height="150"
-                alt="Cover de la playlist Residente Bzrp Music Sessions Vol.49">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">Residente: Bzrp Residente Music Sessions, Vol. 49</h3>
-            <h4 class="playlistA-description">Bizarrap, Residente</h4>
-          </div>
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/El-Anciano-Y-El-Nino.png" width="150" height="150"
-                alt="Cover de la playlist El Anciano y El Niño">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">El Anciano y el Niño</h3>
-            <h4 class="playlistA-description">Cheo Gallego</h4>
-          </div>
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/eminem-stan.png" width="150" height="150" alt="Cover de la playlist Stan">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">Stan</h3>
-            <h4 class="playlistA-description">Eminem, Dido</h4>
-          </div>
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/me-vieron-cruzar.png" width="150" height="150" alt="Cover de la playlist Me vieron cruzar">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">Me Vieron Cruzar</h3>
-            <h4 class="playlistA-description">Calle 13</h4>
-          </div>
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/mamichula.png" width="150" height="150" alt="Cover de la playlist Mamichula">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">Mamichula - En Vivo</h3>
-            <h4 class="playlistA-description">Trueno, Nicki Nicole</h4>
-          </div>
-          <div class="playlistA">
-            <div class="playlistA-cover">
-              <img src="./images/te-ire-a-buscar.png" width="150" height="150" alt="Cover de la playlist Te ire a buscar">
-              <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-              </button>
-            </div>
-            <h3 class="playlistA-title">Te Ire A Buscar</h3>
-            <h4 class="playlistA-description">Santa Fe Klan, Nanpa Básico</h4>
-          </div>
-        </div>
-      </section>
-
-    </main>
-  </div>
-
-  <div class="sidebar">
-
-    <header class="logo">
-      <a href="/" aria-current="page">
-        <img src="./images/spotifu-logo.png" class="logo-image" width="112" height="32" alt="Logo de Spotifu">
-      </a>
-    </header>
-
-    <nav class="menu" aria-label="Principal">
-      <ul class="menu-list">
-        <li class="menuItem is-active">
-          <a href="/" class="link" aria-current="page">
-            <i class="icon-home" aria-hidden="true"></i>
-            <span>Inicio</span>
+      <div class="nowPlaying-details">
+        <div class="nowPlaying-descrption">
+          <a href="#song" class="nowPlaying-title">
+            Grand Escape (feat. Tokio Miura)
           </a>
-        </li>
-        <li class="menuItem">
-          <a href="/" class="link">
-            <i class="icon-search" aria-hidden="true"></i>
-          <span>Buscar</span>
-        </a>
-      </li>
-      <li class="menuItem">
-        <a href="/" class="link">
-          <i class="icon-creditCard" aria-hidden="true"></i>
-          <span>Premium</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-
-  <nav class="list" aria-labelledby="library-navigation">
-   <h2 class="list-title" id="library-navigation">Tu biblioteca</h2>
-    <ul class="list-content">
-      <li class="list-item">
-         <a href="#" class="link">Creada para ti</a>
-      </li>
-      <li class="list-item">
-        <a href="#" class="link">Escuchado recientemente</a>
-      </li>
-      <li class="list-item">
-        <a href="#" class="link">Tus Me gusta</a>
-      </li>
-    </ul>
-  </nav>
-
-    <nav class="list" aria-labelledby="playlist-navigation">
-      <h2 class="list-title" id="playlist-navigation">Playlist</h2>
-      <ul class="list-content">
-        <li class="list-item">
-          <a href="#" class="link">Lo mejor de lo mejor</a>
-        </li>
-        <li class="list-item">
-          <a href="#" class="link">Éxitos de México</a>
-        </li>
-        <li class="list-item">
-          <a href="#" class="link">Para cantar en la ducha</a>
-        </li>
-        <li class="list-item">
-          <a href="#" class="link">Electrónica Máxima</a>
-        </li>
-        <li class="list-item">
-          <a href="#" class="link">Pool Party</a>
-        </li>
-        <li class="list-item">
-          <a href="#" class="link">Cancún de Noche</a>
-        </li>
-        <li class="list-item">
-          <a href="#" class="link">Mega éxitos 2022</a>
-        </li>
-        <li class="list-item">
-          <span class="ellipsis">
-            <a href="#" class="link">Más populares de la semana para ti que eres un pro</a>
-          </span>
-        </li>
-        <li class="list-item">
-          <a href="#" class="link">Regueton viejo & regueton antigüo</a>
-        </li>
-        <li class="list-item">
-          <a href="#" class="link">Canta en el auto</a>
-        </li>
-      </ul>
-    </nav>
+          <a href="#RADWIMPS" class="nowPlaying-artist">
+            RADWIMPS, Toko Miura
+          </a>
+        </div>
+        <div class="nowPlaying-actions">
+          <button class="player-control" aria-checked="false" role="switch" aria-label="Guardar en tu biblioteca"
+            title="Guardar en tu biblioteca">
+            <i class="icon-heart" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="player">
-    <div class="player-nowPlaying">
-      <div class="nowPlaying">
-        <div class="nowPlaying-cover">
-          <img src="./images/grand-scape.png" width="56" height="56"
-            alt="Portada de Grand Escape (feat. Tokio Miura) de RADWIMPS, Toko Miura"
-            title="Portada de Grand Escape (feat. Tokio Miura) de RADWIMPS, Toko Miura">
-        </div>
-        <div class="nowPlaying-details">
-          <div class="nowPlaying-descrption">
-            <a href="#song" class="nowPlaying-title">
-              Grand Escape (feat. Tokio Miura)
-            </a>
-            <a href="#RADWIMPS" class="nowPlaying-artist">
-              RADWIMPS, Toko Miura
-            </a>
-          </div>
-          <div class="nowPlaying-actions">
-            <button class="player-control" role="switch" aria-label="Guardar en tu biblioteca"
-              title="Guardar en tu biblioteca">
-              <i class="icon-heart" aria-hidden="true"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="player-playerControls">
-      <div class="playerControls">
-        <div class="playerControls-buttons" aria-label="Controles de reproducción">
-          <button class="buttonIcon" aria-label="Anterior" title="Anterior">
-            <i class="icon-prev" aria-hidden="true"></i>
-          </button>
-          <button class="buttonIcon is-white" aria-label="Reproducir" title="Reproducir">
-            <i class="icon-play" aria-hidden="true"></i>
-          </button>
-          <button class="buttonIcon" aria-label="Siguiente" title="Siguiente">
-            <i class="icon-next" aria-hidden="true"></i>
-          </button>
-        </div>
-        <div class="playerPlayback">
-          <span class="playerPlayback-progressTime">01:40</span>
-          <div class="playerPlayback-slider">
-            <div class="slider">
-              <div class="slider-progress">
-                <button class="slider-button" aria-label="Controlar el progreso de la reproducción"></button>
-              </div>
-            </div>
-          </div>
-          <span class="playerPlayback-progressTime">01:40</span>
-        </div>
-      </div>
-    </div>
-    <div div class="player-playerVolume">
-      <div class="playerVolume">
-        <button class="player-control" aria-label="Silenciar" aria-describedby="volume-icon">
-          <i class="icon-volumeUp" id="volume-icon" role="presentation" aria-label="Volumen alto"></i>
+  <div class="player-playerControls">
+    <div class="playerControls">
+      <div class="playerControls-buttons" aria-label="Controles de reproducción">
+        <button class="buttonIcon" aria-label="Anterior" title="Anterior">
+          <i class="icon-prev" aria-hidden="true"></i>
         </button>
-        <div class="playerVolume-slider">
+        <button class="buttonIcon is-white" aria-label="Reproducir" title="Reproducir">
+          <i class="icon-play" aria-hidden="true"></i>
+        </button>
+        <button class="buttonIcon" aria-label="Siguiente" title="Siguiente">
+          <i class="icon-next" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="playerPlayback">
+        <span class="playerPlayback-progressTime">01:40</span>
+        <div class="playerPlayback-slider">
           <div class="slider">
             <div class="slider-progress">
               <button class="slider-button" aria-label="Controlar el progreso de la reproducción"></button>
             </div>
           </div>
         </div>
+        <span class="playerPlayback-progressTime">01:40</span>
       </div>
     </div>
   </div>
+  <div div class="player-playerVolume">
+    <div class="playerVolume">
+      <button class="player-control" aria-label="Silenciar" aria-describedby="volume-icon">
+        <i class="icon-volumeUp" id="volume-icon" role="presentation" aria-hidden="true" aria-label="Volumen alto"></i>
+      </button>
+      <div class="playerVolume-slider">
+        <div class="slider">
+          <div class="slider-progress">
+            <button class="slider-button" aria-label="Controlar el progreso de la reproducción"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+    </footer>
+  </div>
+ </div>
 
 
 </body>
