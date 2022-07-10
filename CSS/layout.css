@@ -24,8 +24,12 @@
   block-size: calc(100vh - var(--bottomSize));
   min-block-size: var(--minBlockSize);
   overflow: auto;
-
  }
+
+.layout-main-artist {
+  background: var(--linear-background);
+  z-index: 0;
+}
 
  .layout-bottom {
   flex: 1;

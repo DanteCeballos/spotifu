@@ -5,7 +5,10 @@
 @import './header.css';
 @import './sticky.css';
 @import './profile.css';
-
+@import './page-artist-background.css';
+@import './page-card-artist.css';
+@import './playlistList-artist.css';
+@import './page-card-playList.css';
 
 .page {
   padding-inline-end: 2em;
@@ -24,6 +27,4 @@
   margin-block-end: 1rem;
   margin-inline-end: -1.5rem;
   margin-inline-start: -1.5rem;
-
-
 }
