@@ -6,13 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./CSS/index.css">
-  <title>Spotifu</title>
   <meta property="og:title" content="Proyecto Spotifu" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content="Ven a conocer el proyecto de spotifu" />
   <meta property="og:url" content="https://danteceballos.github.io/spotifu/" />
   <meta property="og:image" content="https://www.pandasecurity.com/es/mediacenter/src/uploads/2016/03/pandasecurity-Who-are-the-most-famous-hackers-in-history.jpg" />
-
+  <!-- favicon -->
   <link rel="apple-touch-icon" sizes="57x57" href="./favicon/">
   <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
@@ -30,18 +29,18 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <title>Spotifu</title>
 </head>
-
-<body class="body">
-  <div class="layout">
-    <div class="layout-block">
-      <div class="layout-sidebar">
-        <div class="sidebar">
-          <header class="logo">
-            <a href="/" aria-current="page">
-              <img src="./images/spotifu-logo.png" class="logo-image" width="112" height="32" alt="Logo de Spotifu">
-            </a>
-          </header>
+  <body class="body">
+    <div class="layout">
+      <div div class="layout-block">
+        <div class="layout-sidebar">
+          <div class="sidebar">
+            <header class="logo">
+              <a href="/" aria-current="page">
+                <img src="./images/spotifu-logo.png" class="logo-image" width="112" height="32" alt="Logo de Spotifu">
+              </a>
+            </header>
 
 <!-- menu#1 -->
 
@@ -77,10 +76,10 @@
             <a href="#" class="link" href="./index2.html">Creada para ti</a>
           </li>
           <li class="list-item">
-            <a href="#" class="link">Escuchado recientemente</a>
+<!--pendiente-->            <a href="#" class="link">Escuchado recientemente</a>
           </li>
           <li class="list-item">
-            <a href="#" class="link">Tus Me gusta</a>
+<!--pendiente-->            <a href="#" class="link">Tus Me gusta</a>
           </li>
         </ul>
       </nav>
@@ -128,14 +127,6 @@
   </div>
 
 
-    <div class="layout-main layout-main-artist" id="layoutArtist" hidden></div>
-    <div class="layout-image">
-      <div class="image-background">
-        <div class="artist-background-linear">
-          <img class="artist-background-img" src="./images/badbunny.png" alt="banner-artist">
-        </div>
-
-
     <div class="image-page">
       <div class="page">
         <div class="sticky">
@@ -150,10 +141,15 @@
               </button>
             </div>
 
+<!-- Search -->
+
             <form class="search" role="search" aria-label="Buscar por Artistas, Canciones o Podcast">
                 <i class="icon-search" aria aria-hidden="true"></i>
                 <input type="search" placeholder="Buscar por Artistas, Canciones o Podcast">
             </form>
+
+<!-- Profile -->
+
             <div class="profile">
             <img class="profile-img" src="./images/Dante.png" alt="profile-img">
             <h3 class="profile-name">Dante Ceballos</h3>
@@ -164,350 +160,16 @@
           </header>
       </div>
     </div>
-    <div class="artist-information">
-      <h3 class="artist-title">Bad Bunny</h3>
-      <div class="artist-details">
-        <h5 class="artist-music">Hits</h5>
-        <h4 class="artist-followers">61,977,321 SEGUIDORES</h4>
-      </div>
-      <button class="button btn-primary" aria-label="Reproducir Musica de Selena Gomez" title="Reproducir Musica de Selena Gomez">
-        Reproducir
-      </button>
-    </div>
 
-    <main class="page-block">
-      <div class="playlistList-content">
-        <section class="playlistList-artist" aria-label="Lista de Reproduccion de Selena Gomez">
-          <div class="playlistList-search">
-            <button class="filter-list" disabled aria-label="Buscar canción" title="Buscar canción">
-              <i class="icon-search" aria-hidden="true"></i>
-            </button>
-            <p>Filtrar</p>
-          </div>
-          <div class="playlistList-song">
-            <div class="playlistList-header">
-              <div class="playlistList-action-size">
-                <h3>Título</h3>
-              </div>
-              <div class="playlistList-artist-size">
-                <h3>Artista</h3>
-              </div>
-              <div class="playlistList-album-size">
-                <h3>Álbum</h3>
-              </div>
-              <div class="playlistList-calendar-size">
-                <button class="title-icon-calendar" disabled aria-label="Fecha de Incorporación"
-                  title="Fecha de Incorporación">
-                  <i class="icon-calendar" aria-hidden="true"></i>
-                </button>
-                <button class="title-icon-time" disabled aria-label="Duración de la canción" title="Duración de la canción">
-                  <i class="icon-clock" aria-hidden="true"></i>
-                </button>
-              </div>
-            </div>
-    <div class="playlistList-song-detail">
-      <div class="playlistList-action-size">
-        <button class="play-song" aria-label="Reproducir" title="Reproducir">
-          <i class="icon-play" aria-hidden="true"></i>
-        </button>
-        <button class="like-song" role="switch" aria-checked="false" aria-label="Guardar en tu biblioteca"
-          title="Guardar en tu biblioteca">
-          <i class="icon-heart" aria-hidden="true"></i>
-        </button>
-        <span>
-          Love You Like A Love Song
-        </span>
-      </div>
-      <div class="playlistList-artist-size">
-        <span>
-          Selena Gomez & The Scene
-        </span>
-      </div>
-      <div class="playlistList-album-size">
-        <span>
-          When The Sun Goes Down
-        </span>
-      </div>
-      <div class="playlistList-calendar-size">
-        <span>
-          7 dias atras
-        </span>
-        <span>
-          3:08
-        </span>
-      </div>
-    </div>
-    <div class="playlistList-song-detail">
-      <div class="playlistList-action-size">
-        <button class="play-song" aria-label="Reproducir" title="Reproducir">
-          <i class="icon-play" aria-hidden="true"></i>
-        </button>
-        <button class="like-song" role="switch" aria-checked="false" aria-label="Guardar en tu biblioteca"
-          title="Guardar en tu biblioteca">
-          <i class="icon-heart" aria-hidden="true"></i>
-        </button>
-        <span>
-          Un Año Sin Lluvia
-        </span>
-      </div>
-      <div class="playlistList-artist-size">
-        <span>
-          Selena Gomez & The Scene
-        </span>
-      </div>
-      <div class="playlistList-album-size">
-        <span>
-          A Year Without Rain
-        </span>
-      </div>
-      <div class="playlistList-calendar-size">
-        <span>
-          7 dias atras
-        </span>
-        <span>
-          3:30
-        </span>
-      </div>
-    </div>
-    <div class="playlistList-song-detail">
-      <div class="playlistList-action-size">
-        <button class="play-song" aria-label="Reproducir" title="Reproducir">
-          <i class="icon-play" aria-hidden="true"></i>
-        </button>
-        <button class="like-song" role="switch" aria-checked="false" aria-label="Guardar en tu biblioteca"
-          title="Guardar en tu biblioteca">
-          <i class="icon-heart" aria-hidden="true"></i>
-        </button>
-        <span>
-          The Heart Wants What It Wants
-        </span>
-      </div>
-      <div class="playlistList-artist-size">
-        <span>
-          Selena Gomez
-        </span>
-      </div>
-      <div class="playlistList-album-size">
-        <span>
-          The Heart Wants What It Wants
-        </span>
-      </div>
-      <div class="playlistList-calendar-size">
-        <span>
-          7 dias atras
-        </span>
-        <span>
-          3:47
-        </span>
-      </div>
-    </div>
-    <div class="playlistList-song-detail">
-      <div class="playlistList-action-size">
-        <button class="play-song" aria-label="Reproducir" title="Reproducir">
-          <i class="icon-play" aria-hidden="true"></i>
-        </button>
-        <button class="like-song" role="switch" aria-checked="false" aria-label="Guardar en tu biblioteca"
-          title="Guardar en tu biblioteca">
-          <i class="icon-heart" aria-hidden="true"></i>
-        </button>
-        <span>
-          Who Says
-        </span>
-      </div>
-      <div class="playlistList-artist-size">
-        <span>
-          Selena Gomez & The Scene
-        </span>
-      </div>
-      <div class="playlistList-album-size">
-        <span>
-          When The Sun Goes Down
-        </span>
-      </div>
-      <div class="playlistList-calendar-size">
-        <span>
-          7 dias atras
-        </span>
-        <span>
-          3:15
-        </span>
-      </div>
-    </div>
-    <div class="playlistList-song-detail">
-      <div class="playlistList-action-size">
-        <button class="play-song" aria-label="Reproducir" title="Reproducir">
-          <i class="icon-play" aria-hidden="true"></i>
-        </button>
-        <button class="like-song" role="switch" aria-checked="false" aria-label="Guardar en tu biblioteca"
-          title="Guardar en tu biblioteca">
-          <i class="icon-heart" aria-hidden="true"></i>
-        </button>
-        <span>
-          Naturally
-        </span>
-      </div>
-      <div class="playlistList-artist-size">
-        <span>
-          Selena Gomez & The Scene
-        </span>
-      </div>
-      <div class="playlistList-album-size">
-        <span>
-          Kiss & Tell (European Version)
-        </span>
-      </div>
-      <div class="playlistList-calendar-size">
-        <span>
-          7 dias atras
-        </span>
-        <span>
-          3:22
-        </span>
-      </div>
-    </div>
-    <div class="playlistList-song-detail">
-      <div class="playlistList-action-size">
-        <button class="play-song" aria-label="Reproducir" title="Reproducir">
-          <i class="icon-play" aria-hidden="true"></i>
-        </button>
-        <button class="like-song" role="switch" aria-checked="false" aria-label="Guardar en tu biblioteca"
-          title="Guardar en tu biblioteca">
-          <i class="icon-heart" aria-hidden="true"></i>
-        </button>
-        <span>
-          Hands To Myself
-        </span>
-      </div>
-      <div class="playlistList-artist-size">
-        <span>
-          Selena Gomez
-        </span>
-      </div>
-      <div class="playlistList-album-size">
-        <span>
-          Revival (Deluxe)
-        </span>
-      </div>
-      <div class="playlistList-calendar-size">
-        <span>
-          7 dias atras
-        </span>
-        <span>
-          3:20
-        </span>
-      </div>
-    </div>
-    <div class="playlistList-song-detail">
-      <div class="playlistList-action-size">
-        <button class="play-song" aria-label="Reproducir" title="Reproducir">
-          <i class="icon-play" aria-hidden="true"></i>
-        </button>
-        <button class="like-song" role="switch" aria-checked="false" aria-label="Guardar en tu biblioteca"
-          title="Guardar en tu biblioteca">
-          <i class="icon-heart" aria-hidden="true"></i>
-        </button>
-        <span>
-          De Una Vez
-        </span>
-      </div>
-      <div class="playlistList-artist-size">
-        <span>
-          Selena Gomez
-        </span>
-      </div>
-      <div class="playlistList-album-size">
-        <span>
-          Revelación - EP
-        </span>
-      </div>
-      <div class="playlistList-calendar-size">
-        <span>
-          7 dias atras
-        </span>
-        <span>
-          2:35
-        </span>
-      </div>
-    </div>
-    <div class="playlistList-song-detail">
-      <div class="playlistList-action-size">
-        <button class="play-song" aria-label="Reproducir" title="Reproducir">
-          <i class="icon-play" aria-hidden="true"></i>
-        </button>
-        <button class="like-song" role="switch" aria-checked="false" aria-label="Guardar en tu biblioteca"
-          title="Guardar en tu biblioteca">
-          <i class="icon-heart" aria-hidden="true"></i>
-        </button>
-        <span>
-          Lose You To Love Me
-        </span>
-      </div>
-      <div class="playlistList-artist-size">
-        <span>
-          Selena Gomez
-        </span>
-      </div>
-      <div class="playlistList-album-size">
-        <span>
-          Rare
-        </span>
-      </div>
-      <div class="playlistList-calendar-size">
-        <span>
-          7 dias atras
-        </span>
-        <span>
-          3:26
-        </span>
-      </div>
-    </div>
-    <div class="playlistList-song-detail">
-      <div class="playlistList-action-size">
-        <button class="play-song" aria-label="Reproducir" title="Reproducir">
-          <i class="icon-play" aria-hidden="true"></i>
-        </button>
-        <button class="like-song" role="switch" aria-checked="false" aria-label="Guardar en tu biblioteca"
-          title="Guardar en tu biblioteca">
-          <i class="icon-heart" aria-hidden="true"></i>
-        </button>
-        <span>
-          Same Old Love
-        </span>
-      </div>
-      <div class="playlistList-artist-size">
-        <span>
-          Selena Gomez
-        </span>
-      </div>
-      <div class="playlistList-album-size">
-        <span>
-          Revival (Deluxe)
-        </span>
-      </div>
-      <div class="playlistList-calendar-size">
-        <span>
-          7 dias atras
-        </span>
-        <span>
-          3:49
-        </span>
-      </div>
-    </div>
-    </div>
-    </section>
-    </div>
-    </main>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
 
 
 
 
 
     <div class="layout-block">
+
+<!-- footer -->
+
       <footer class="layout-bottom">
         <div class="player">
           <div class="player-nowPlaying">

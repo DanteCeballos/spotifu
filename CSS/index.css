@@ -9,7 +9,10 @@
   @import './page.css';
   @import './layout.css';
   @import './scrollbar.css';
-  @import './button.css';
+
+
+  @import './playlist-creadaparati.css';
+  @import './image-cover.css';
 
 :root{
     font-size: 14px;

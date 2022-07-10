@@ -1,0 +1,20 @@
+.playlist-creadaparati {
+
+}
+
+.playlist-creadaparati-header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  inline-size: fit-content;
+  gap: 1.5rem;
+  align-items: center;
+  padding-block-end: 1rem;
+}
+
+.playlist-creadaparati-header h3 {
+  font: var(--headline1);
+  color: var(--white);
+  margin-block-end: 0;
+  margin-block-start: 5.4375rem;
+}
