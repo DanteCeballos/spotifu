@@ -16,12 +16,44 @@
 .buttonIcon.is-primary {
   background: var(--primary);
   color: var(--white);
+  /* border-radius: 4.375rem; */
+  text-transform: uppercase;
+  cursor: pointer;
+  /* width: 9.56rem; */
+  /* gap: 10px; */
+  /* padding: .5rem, 2rem, .5rem, 2rem; */
+
 }
 
 .buttonIcon.is-transparent {
   border: 1px solid var(--white);
   color: var(--white);
 }
+
+.buttonIcon.is-secondary {
+  position: relative;
+  border: 1px solid var(--white);
+  inline-size: 2.5rem;
+  block-size: 2.5rem;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--gray10);
+
+}
+
+.buttonIcon.is-tertiary {
+  background: var(--primary);
+    color: var(--white);
+    border-radius: 4.375rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 9.56rem;
+    gap: 10px;
+    padding: .5rem, 2rem, .5rem, 2rem;
+
+}
+
 
 .buttonIcon .icon-play {
   position: relative;

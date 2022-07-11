@@ -112,16 +112,16 @@
   max-inline-size: var(--max-inline-size-clock);
 }
 
-.playlist-creadaparati-filter {
+.playlist-creadaparati-filtrar {
   margin-block: 1rem;
 }
 
-.playlist-creadaparati-filter .search input {
+.playlist-creadaparati-filtrar .search input {
   background-color: transparent;
   color: var(--white);
 }
 
-.playlist-creadaparati-filter .search i {
+.playlist-creadaparati-filtrar .search i {
   color: var(--white);
 }
 
