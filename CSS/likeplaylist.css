@@ -1,0 +1,147 @@
+.likeplaylist-header {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 0.625rem;
+}
+
+.likeplaylist-image {
+  /* border: 1px solid blue; */
+}
+
+.likeplaylist-image img {
+  inline-size: 14.5rem;
+  block-size: 14.5rem;
+  vertical-align: middle;
+}
+
+.likeplaylist-details-header {
+  /* border: 1px solid yellow; */
+  color: var(--white);
+  align-self: flex-end;
+}
+
+.likeplaylist-topinf,
+.likeplaylist-author {
+  font: var(--smallfont);
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.likeplaylist-titlesong {
+  font: var(--headline1);
+  margin-block-start: 0.625rem;
+  margin-block-end: 0.625rem;
+}
+
+/* .likeplaylist-author {
+  font: var(--smallfont);
+} */
+
+.likeplaylist-list {
+  /* border: 1px solid red; */
+}
+
+.buttonplaytop {
+  padding-block-start: 0.5rem;
+  padding-block-end: 1rem;
+  /* padding-inline-start: 1.5rem; */
+}
+
+.likeplaylist-table {
+  display: flex;
+  flex-direction: column;
+  /* width: 1087px; */
+  /* inline-size: 100%; */
+  gap: 1.062rem;
+  font: var(--smallfont);
+  color: var(--white);
+  /* border: 1px solid blue; */
+  --max-inline-size-number: 1.875rem;
+  --max-inline-size-clock: 5rem;
+}
+
+.likeplaylist-table tr {
+  display: flex;
+  align-items: center;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+  gap: 0.5rem;
+}
+
+.likeplaylist-table tr th,
+.likeplaylist-table tr td {
+  flex: 1;
+}
+
+.likeplaylist-thead {
+  border-block-end: 1px solid var(--gray10);
+}
+
+.likeplaylist-number {
+  max-inline-size: var(--max-inline-size-number);
+}
+
+.likeplaylist-clock {
+  max-inline-size: var(--max-inline-size-clock);
+}
+
+/* .likeplaylist-description:nth-child(2) {
+  flex-shrink: 1;
+} */
+
+.likeplaylist-thead {
+  text-align: left;
+}
+
+.likeplaylist-thead th {
+  /* border: 1px solid yellow; */
+  /*  padding: 8px 10px; */
+}
+
+.likeplaylist-thead tr {
+  padding-block-end: 0.5rem;
+}
+
+.likeplaylist-tbody tr {
+  /* border: 1px solid red; */
+  padding-block-start: 0.5rem;
+  padding-block-end: 0.5rem;
+}
+
+.likeplaylist-number {
+  font: var(--basefont-normal);
+  text-align: center;
+  inline-size: 30px;
+}
+
+.likeplaylist-details {
+  display: flex;
+  /* border: 1px solid red; */
+  gap: 0.5rem;
+}
+
+.likeplaylist-imagen {
+  /* border: 1px solid red; */
+}
+
+.likeplaylist-imagen img {
+  /* border: 1px solid blue; */
+  inline-size: 2.5rem;
+  vertical-align: middle;
+}
+
+.likeplaylist-details1 {
+  /*  font: var(--smallfont); */
+  align-self: center;
+  /* block-size: 1.75rem; */
+  /* border: 1px solid yellow; */
+}
+
+.likeplaylist-details1 p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.likeplaylist-artist {
+  color: var(--gray10);
+}
