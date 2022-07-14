@@ -46,48 +46,491 @@
 
 <!-- menu#1 -->
 
-<nav class="menu" aria-label="Principal">
-  <ul class="menu-list">
-    <li class="menuItem is-active">
-      <a href="./index.html" class="link" aria-current="page">
-        <i class="icon-home" aria-hidden="true"></i>
-        <span>Inicio</span>
-      </a>
-    </li>
-    <li class="menuItem">
-      <a href="/" class="link">
-        <i class="icon-search" aria-hidden="true"></i>
-        <span>Buscar</span>
-      </a>
-    </li>
-    <li class="menuItem">
-      <a href="/" class="link">
-        <i class="icon-creditCard" aria-hidden="true"></i>
-        <span>Premium</span>
-      </a>
-    </li>
-  </ul>
-</nav>
+        <nav class="menu" aria-label="Principal">
+          <ul class="menu-list">
+            <li class="menuItem is-active">
+              <a href="./index.html" class="link" aria-current="page">
+                <i class="icon-home" aria-hidden="true"></i>
+                <span>Inicio</span>
+              </a>
+            </li>
+            <li class="menuItem">
+              <a href="/" class="link">
+                <i class="icon-search" aria-hidden="true"></i>
+                <span>Buscar</span>
+              </a>
+            </li>
+            <li class="menuItem">
+              <a href="/" class="link">
+                <i class="icon-creditCard" aria-hidden="true"></i>
+                <span>Premium</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
 
 <!-- menu#2 -->
 
-<nav class="list" aria-labelledby="library-navigation">
-  <h2 class="list-title" id="library-navigation">Tu biblioteca</h2>
-  <ul class="list-content">
-    <li class="list-item">
-      <a href="./index2.html" class="link">Creada para ti</a>
-    </li>
-    <li class="list-item">
-      <a href="./index3.html" class="link">Escuchado recientemente</a>
-    </li>
-    <li class="list-item">
-      <!--pendiente--> <a href="#" class="link">Tus Me gusta</a>
-    </li>
-  </ul>
-</nav>
+        <nav class="list" aria-labelledby="library-navigation">
+          <h2 class="list-title" id="library-navigation">Tu biblioteca</h2>
+          <ul class="list-content">
+            <li class="list-item">
+              <a href="./index2.html" class="link">Creada para ti</a>
+            </li>
+            <li class="list-item">
+              <a href="./index3.html" class="link">Escuchado recientemente</a>
+            </li>
+            <li class="list-item">
+              <!--pendiente--> <a href="#" class="link">Tus Me gusta</a>
+            </li>
+          </ul>
+        </nav>
+
+
+  <!-- menu#3 -->
+
+        <nav class="list" aria-labelledby="playlist-navigation">
+          <h2 class="list-title" id="playlist-navigation">Playlist</h2>
+          <ul class="list-content">
+            <li class="list-item">
+              <a href="#" class="link">Lo mejor de lo mejor</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Éxitos de México</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Para cantar en la ducha</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Electrónica Máxima</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Pool Party</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Cancún de Noche</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Mega éxitos 2022</a>
+            </li>
+            <li class="list-item">
+              <span class="ellipsis">
+                <a href="#" class="link">Más populares de la semana para ti que eres un pro</a>
+              </span>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Regueton viejo & regueton antigüo</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Canta en el auto</a>
+            </li>
+          </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="layout-main is-showBackImage">
+
+      <div id="image-cover" class="image-cover" style="display: block;">
+        <img src="./images/mexico.png" alt="Cover">
+      </div>
+
+
+      <div class="page">
+        <div class="sticky">
+          <div class="page-block">
+
+  <header class="header" aria-label="Barra superior y menú del usuario">
+    <div class="navigation">
+      <button class="navigation-prev" aria-label="Volver" title="Volver">
+        <i class="icon-arrowLeft" aria-hidden="true"></i>
+      </button>
+      <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+        <i class="icon-arrowRight" aria-hidden="true"></i>
+      </button>
+    </div>
 
 
 
+  <!-- Search -->
+
+            <form class="search" role="search" aria-label="Buscar por Artistas, Canciones o Podcast">
+                <i class="icon-search" aria aria-hidden="true"></i>
+              <input type="search" placeholder="Buscar por Artistas, Canciones o Podcast">
+            </form>
+
+
+  <!-- Profile -->
+
+              <div class="profile">
+                <img class="profile-img" src="./images/Dante.png" alt="profile-img">
+                  <h3 class="profile-name">Dante Ceballos</h3>
+                    <button class="buttonIcon" disabled aria-label="Opciones de Perfil" title="Opciones de Perfil">
+                      <i class="icon-vector" aria-hidden="true"></i>
+                    </button>
+               </div>
+          </header>
+        </div>
+      </div>
+
+
+  <main class="page-block">
+    <section class="escuchado-recientemente">
+      <section class="escuchado-recientemente-hero">
+        <div class="escuchado-recientemente-imagen">
+          <img src="./images/exitos-mexico.png" width="312" height="183" alt="Imagen principal de exitos">
+        </div>
+        <div class="escuchado-recientemente-hero-details">
+        <h3 class="recentlyheard-title"> Éxitos de México</h3>
+        <p class="escuchado-recientemente-namesong"> </p>
+        <p class="escuchado-recientemente-follower"> 4,385,780 Me Gusta </p>
+        <button class="buttonIcon is-tertiary"> Reproducir </button>
+        </div>
+
+      </section>
+
+  <section class="escuchado-recientemente-songList">
+    <div class="playlist-creadaparati-filtrar">
+      <form class="search" role="search" aria-label="filtrar">
+        <i class="icon-search" aria-hidden="true"></i>
+        <input type="search" placeholder="Filtrar">
+      </form>
+    </div>
+
+  <table class="escuchado-recientemente-table">
+    <thead>
+      <tr>
+        <th class="is-icon"></th>
+        <th class="is-icon"></th>
+        <th>Título</th>
+        <th>Artista</th>
+        <th>Album</th>
+        <th class="is-calendar">
+          <i class="icon-calendar"></i>
+        </th>
+        <th class="is-clock">
+          <i class="icon-clock"></i>
+        </th>
+      </tr>
+    </thead>
+
+    <tbody class="escuchado-recientemente-tbody">
+
+  <!-- row1 -->
+  <tr>
+    <td class="escuchado-recientemente-title is-icon">
+      <button class="buttonIcon is-secondary">
+        <i class="icon-play"></i>
+      </button>
+    </td>
+
+    <td class="is-icon">
+      <i class="icon-heart"></i>
+    </td>
+    <td class="is-color">Ojos Marrones</td>
+    <td class="is-color is-artist"> Lasso</td>
+    <td class="is-color">Ojos Marrones</td>
+    <td class="is-calendar">
+      <time datetime="2022-05-24">2022-05-24</time>
+    </td>
+    <td class="is-clock">
+      <time datetime="3:18">3:18</time>
+    </td>
+  </tr>
+
+  <!-- row2 -->
+
+  <tr>
+    <td class="escuchado-recientemente-title is-icon">
+      <button class="buttonIcon is-secondary">
+        <i class="icon-play"></i>
+      </button>
+    </td>
+
+    <td class="is-icon">
+      <i class="icon-heart"></i>
+    </td>
+    <td class="is-color">Tití Me Preguntó</td>
+    <td class="is-color is-artist"> Bad Bunny</td>
+    <td class="is-color">Un Verano Sin Ti</td>
+    <td class="is-calendar">
+      <time datetime="2022-05-24">2022-05-24</time>
+    </td>
+    <td class="is-clock">
+      <time datetime="4:03">4:03</time>
+    </td>
+  </tr>
+
+  <!-- row3 -->
+
+    <tr>
+      <td class="escuchado-recientemente-title is-icon">
+        <button class="buttonIcon is-secondary">
+          <i class="icon-play"></i>
+        </button>
+      </td>
+
+    <td class="is-icon">
+      <i class="icon-heart"></i>
+    </td>
+    <td class="is-color">Pongámonos de Acuerdo</td>
+    <td class="is-color is-artist"> Julión Álvarez y su Norteño Banda</td>
+    <td class="is-color">El Aferrado</td>
+    <td class="is-calendar">
+      <time datetime="2022-05-24">2022-05-24</time>
+    </td>
+    <td class="is-clock">
+      <time datetime="2:41">2:41</time>
+    </td>
+  </tr>
+
+  <!-- row4 -->
+
+    <tr>
+      <td class="escuchado-recientemente-title is-icon">
+        <button class="buttonIcon is-secondary">
+          <i class="icon-play"></i>
+        </button>
+      </td>
+
+    <td class="is-icon">
+      <i class="icon-heart"></i>
+    </td>
+    <td class="is-color">PROVENZA</td>
+    <td class="is-color is-artist"> KAROL G</td>
+    <td class="is-color">PROVENZA</td>
+    <td class="is-calendar">
+      <time datetime="2022-05-24">2022-05-24</time>
+    </td>
+    <td class="is-clock">
+      <time datetime="3:30">3:30</time>
+    </td>
+  </tr>
+
+  <!-- row5 -->
+
+    <tr>
+      <td class="escuchado-recientemente-title is-icon">
+        <button class="buttonIcon is-secondary">
+          <i class="icon-play"></i>
+        </button>
+      </td>
+
+    <td class="is-icon">
+      <i class="icon-heart"></i>
+    </td>
+    <td class="is-color">Ojos Verdes</td>
+    <td class="is-color is-artist"> Julión Álvarez y su Norteño Banda</td>
+    <td class="is-color">Soy Lo Que Quiero</td>
+    <td class="is-calendar">
+      <time datetime="2022-05-24">2022-05-24</time>
+    </td>
+    <td class="is-clock">
+      <time datetime="3:57">3:57</time>
+    </td>
+  </tr>
+
+  <!-- row6 -->
+
+    <tr>
+      <td class="escuchado-recientemente-title is-icon">
+        <button class="buttonIcon is-secondary">
+          <i class="icon-play"></i>
+        </button>
+      </td>
+
+    <td class="is-icon">
+      <i class="icon-heart"></i>
+    </td>
+    <td class="is-color">ULTRA SOLO REMIX</td>
+    <td class="is-color is-artist"> Polimá Westcoast, Pailita</td>
+    <td class="is-color">ULTRA SOLO REMIX</td>
+    <td class="is-calendar">
+      <time datetime="2022-05-24">2022-05-24</time>
+    </td>
+    <td class="is-clock">
+      <time datetime="5:22">5:22</time>
+    </td>
+  </tr>
+
+  <!-- row7 -->
+
+    <tr>
+      <td class="escuchado-recientemente-title is-icon">
+        <button class="buttonIcon is-secondary">
+          <i class="icon-play"></i>
+        </button>
+      </td>
+
+    <td class="is-icon">
+      <i class="icon-heart"></i>
+    </td>
+    <td class="is-color">Tarot</td>
+    <td class="is-color is-artist"> Bad Bunny</td>
+    <td class="is-color">Un Verano Sin Ti</td>
+    <td class="is-calendar">
+      <time datetime="2022-05-24">2022-05-24</time>
+    </td>
+    <td class="is-clock">
+      <time datetime="3:57">3:57</time>
+    </td>
+  </tr>
+
+  <!-- row8 -->
+
+    <tr>
+      <td class="escuchado-recientemente-title is-icon">
+        <button class="buttonIcon is-secondary">
+          <i class="icon-play"></i>
+        </button>
+      </td>
+
+    <td class="is-icon">
+      <i class="icon-heart"></i>
+    </td>
+    <td class="is-color">Neverita</td>
+    <td class="is-color is-artist"> Bad Bunny</td>
+    <td class="is-color">Un Verano Sin Ti</td>
+    <td class="is-calendar">
+      <time datetime="2022-05-24">2022-05-24</time>
+    </td>
+    <td class="is-clock">
+      <time datetime="2:53">2:53</time>
+    </td>
+  </tr>
+
+  <!-- row9 -->
+
+    <tr>
+      <td class="escuchado-recientemente-title is-icon">
+        <button class="buttonIcon is-secondary">
+          <i class="icon-play"></i>
+        </button>
+      </td>
+
+    <td class="is-icon">
+      <i class="icon-heart"></i>
+    </td>
+    <td class="is-color">Te Felicito</td>
+    <td class="is-color is-artist"> Shakira, Rauw Alejandro</td>
+    <td class="is-color">Te Felicito</td>
+    <td class="is-calendar">
+      <time datetime="2022-05-24">2022-05-24</time>
+    </td>
+    <td class="is-clock">
+      <time datetime="2:22">2:22</time>
+    </td>
+  </tr>
+
+  <!-- row10 -->
+
+    <tr>
+      <td class="escuchado-recientemente-title is-icon">
+        <button class="buttonIcon is-secondary">
+          <i class="icon-play"></i>
+        </button>
+      </td>
+
+    <td class="is-icon">
+      <i class="icon-heart"></i>
+    </td>
+    <td class="is-color">Efecto</td>
+    <td class="is-color is-artist"> Bad Bunny</td>
+    <td class="is-color">Un Verano Sin Ti</td>
+    <td class="is-calendar">
+      <time datetime="2022-05-24">2022-05-24</time>
+    </td>
+    <td class="is-clock">
+      <time datetime="3:33">3:33</time>
+    </td>
+  </tr>
+
+  </tbody>
+  </table>
+  </section>
+
+  </section>
+
+  </main>
+
+
+  </div>
+  </div>
+  </div>
+
+  <!-- footer -->
+
+  <footer class="layout-bottom">
+    <div class="player">
+      <div class="player-nowPlaying">
+        <div class="nowPlaying">
+          <div class="nowPlaying-cover">
+            <img src="./images/titi-me-pregunto.png" width="56" height="56" alt="Portada de The Moon de DJ Feedo"
+              title="Portada de The Moon deDJ Feedo">
+          </div>
+          <div class="nowPlaying-details">
+            <div class="nowPlaying-descrption">
+              <a href="#song" class="nowPlaying-title">
+                Tití Me Preguntó
+              </a>
+              <a href="#Bad Bunny" class="nowPlaying-artist">
+                Bad Bunny
+              </a>
+            </div>
+            <div class="nowPlaying-actions">
+              <button class="player-control" aria-checked="false" role="switch" aria-label="Guardar en tu biblioteca"
+                title="Guardar en tu biblioteca">
+                <i class="icon-heart" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="player-playerControls">
+        <div class="playerControls">
+          <div class="playerControls-buttons" aria-label="Controles de reproducción">
+            <button class="buttonIcon" aria-label="Anterior" title="Anterior">
+              <i class="icon-prev" aria-hidden="true"></i>
+            </button>
+            <button class="buttonIcon is-white" aria-label="Reproducir" title="Reproducir">
+              <i class="icon-play" aria-hidden="true"></i>
+            </button>
+            <button class="buttonIcon" aria-label="Siguiente" title="Siguiente">
+              <i class="icon-next" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="playerPlayback">
+            <span class="playerPlayback-progressTime">01:12</span>
+            <div class="playerPlayback-slider">
+              <div class="slider">
+                <div class="slider-progress">
+                  <button class="slider-button" aria-label="Controlar el progreso de la reproducción"></button>
+                </div>
+              </div>
+            </div>
+            <span class="playerPlayback-progressTime">04:03</span>
+          </div>
+        </div>
+      </div>
+      <div div class="player-playerVolume">
+        <div class="playerVolume">
+          <button class="player-control" aria-label="Silenciar" aria-describedby="volume-icon">
+            <i class="icon-volumeUp" id="volume-icon" role="presentation" aria-hidden="true"
+              aria-label="Volumen alto"></i>
+          </button>
+          <div class="playerVolume-slider">
+            <div class="slider">
+              <div class="slider-progress">
+                <button class="slider-button" aria-label="Controlar el progreso de la reproducción"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+  </div>
 
 
 
